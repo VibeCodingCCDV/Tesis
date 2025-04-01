@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Consistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Matriz de Consistencia  v.3.0</h1>
+        <div class="input-container">
+            <input type="text" id="researchTopic" placeholder="Introduce el tema de investigación...">
+            <button id="generateButton">Generar Matriz</button>
+        </div>
+        <div id="loading" class="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+            <p>Generando matriz...</p>
+        </div>
+        <div id="matrixContainer"></div>
+    </div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generatigit push -u origin mainve-ai"
+          }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+    <script src="pdf-export.js"></script>
+</body>
+</html>

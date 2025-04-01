@@ -40,7 +40,7 @@ document.getElementById('generateButton').addEventListener('click', async () => 
 // Función para generar la matriz usando la API de Gemini
 async function generateMatrixWithGemini(topic) {
     // Inicializar el modelo
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-001" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-pro-exp-02-05" });
 
     const prompt = `
     Actúa como un especialista en asesoramiento de tesis y usa los manuales de investigación (Como el de Roberto Hernández Sampieri o el de HECTOR HUGO SANCHEZ CARLESSI, por ejemplo) para generar una matriz de consistencia completa y coherente para una investigación científica sobre "${topic}".
